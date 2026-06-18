@@ -4,9 +4,10 @@ A full-stack event management platform for organizers, staff, vendors, guests, a
 
 ## Team Members
 
-- Add your team member names here before submission.
-- Each team member should make at least one meaningful Git commit in the team GitHub repository.
-
+-Jonathan Mesdary 22001210
+-Philopateer Hany 22001315
+-Youssef Azer 22001286
+-Karim Nabil 19002105
 ## Technologies Used
 
 - Frontend: React and Vite
@@ -208,10 +209,3 @@ The smoke test logs in, checks auth, updates venue availability, updates a budge
 - `GET /api/guest/me/invitations`
 - `GET /api/venue-owner/reports`
 
-## Submission Checklist
-
-- Push the project to the team GitHub repository.
-- Make sure every team member has at least one meaningful commit.
-- Run `npm run seed` before demoing so the database contains dummy data.
-- Include this README and `AI_CHATLOG.md`.
-- Test the main user journey tabs in the browser before submission.
