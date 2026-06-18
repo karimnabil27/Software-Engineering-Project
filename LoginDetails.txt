@@ -1,0 +1,19 @@
+Organizer
+Email: jonathan@giuberlin
+Password: 1234
+
+Staff
+Email: omar@events.test
+Password: password123
+
+Vendor
+Email: hello@nilecatering.test
+Password: password123
+
+Venue Owner
+Email: owner@zamalekvenues.test
+Password: password123
+
+Guest
+Email: youssef@example.test
+Password: password123

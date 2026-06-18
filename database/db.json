@@ -1,0 +1,2392 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Jonathan",
+      "email": "jonathan@giuberlin",
+      "role": "organizer",
+      "status": "active",
+      "passwordHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
+    },
+    {
+      "id": "u2",
+      "name": "Omar Adel",
+      "email": "omar@events.test",
+      "role": "staff",
+      "status": "active",
+      "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+      "age": 26,
+      "employmentType": "full-time",
+      "speciality": "Logistics"
+    },
+    {
+      "id": "u3",
+      "name": "Laila Nabil",
+      "email": "laila@events.test",
+      "role": "staff",
+      "status": "active",
+      "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+      "age": 23,
+      "employmentType": "part-time",
+      "speciality": "Catering"
+    },
+    {
+      "id": "u4",
+      "name": "Nile Catering Co.",
+      "email": "hello@nilecatering.test",
+      "role": "vendor",
+      "status": "active",
+      "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f"
+    },
+    {
+      "id": "u5",
+      "name": "Zamalek Venues",
+      "email": "owner@zamalekvenues.test",
+      "role": "venue-owner",
+      "status": "active",
+      "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+      "companyName": "Zamalek Venues LLC",
+      "contact": "+20 2 2735 0000"
+    },
+    {
+      "id": "u6",
+      "name": "Youssef Samir",
+      "email": "youssef@example.test",
+      "role": "guest",
+      "status": "active",
+      "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f"
+    },
+    {
+      "id": "u7",
+      "name": "Maria Hassan",
+      "email": "maria@events-co.test",
+      "role": "organizer",
+      "status": "active",
+      "passwordHash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f"
+    }
+  ],
+  "venues": [
+    {
+      "id": "v1",
+      "ownerId": "u5",
+      "name": "Nile View Hall",
+      "description": "Modern indoor hall with river view and modular seating.",
+      "location": "Cairo",
+      "capacity": 300,
+      "sizeSqm": 520,
+      "pricePerDay": 45000,
+      "amenities": [
+        "Stage",
+        "Lighting",
+        "Parking",
+        "Catering prep room"
+      ],
+      "photos": [
+        "nile-view-hall.jpg"
+      ],
+      "floorPlan": "rectangular ballroom with stage and buffet area",
+      "active": true,
+      "unavailableDates": [
+        "2026-06-20",
+        "2026-06-29",
+        "2026-07-05"
+      ]
+    },
+    {
+      "id": "v2",
+      "ownerId": "u5",
+      "name": "Garden Pop-Up Space",
+      "description": "Outdoor garden venue suitable for brand activations and receptions.",
+      "location": "New Cairo",
+      "capacity": 180,
+      "sizeSqm": 750,
+      "pricePerDay": 32000,
+      "amenities": [
+        "Outdoor power",
+        "Green room",
+        "Security gate"
+      ],
+      "photos": [
+        "garden-popup.jpg"
+      ],
+      "floorPlan": "open garden layout with entrance checkpoint",
+      "active": true,
+      "unavailableDates": [
+        "2026-06-25",
+        "2026-08-08"
+      ]
+    },
+    {
+      "id": "v3",
+      "ownerId": "u5",
+      "name": "Corniche Rooftop Lounge",
+      "description": "Rooftop venue with skyline views for galas and executive gatherings.",
+      "location": "Alexandria",
+      "capacity": 120,
+      "sizeSqm": 340,
+      "pricePerDay": 38000,
+      "amenities": [
+        "Skyline deck",
+        "VIP lounge",
+        "Bar service",
+        "Valet parking"
+      ],
+      "photos": [
+        "corniche-rooftop.jpg"
+      ],
+      "floorPlan": "rooftop lounge with central bar and perimeter seating",
+      "active": true,
+      "unavailableDates": [
+        "2026-07-18",
+        "2026-08-01",
+        "2026-09-01"
+      ]
+    },
+    {
+      "id": "v4",
+      "ownerId": "u5",
+      "name": "Zamalek Studio Loft",
+      "description": "Intimate loft space for workshops, recordings, and small corporate sessions.",
+      "location": "Cairo",
+      "capacity": 60,
+      "sizeSqm": 180,
+      "pricePerDay": 18000,
+      "amenities": [
+        "Acoustic treatment",
+        "Streaming setup",
+        "Kitchenette",
+        "Wi-Fi"
+      ],
+      "photos": [
+        "studio-loft.jpg",
+        "loft-floor-plan.pdf"
+      ],
+      "floorPlan": "open loft with stage corner and lounge seating",
+      "active": false,
+      "unavailableDates": [
+        "2026-07-25",
+        "2026-08-15",
+        "2026-09-30"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "e1",
+      "organizerId": "u1",
+      "venueId": "v1",
+      "name": "Cairo Startup Summit",
+      "type": "Conference",
+      "date": "2026-06-24",
+      "time": "10:00",
+      "dressCode": "Business casual",
+      "agenda": "Panels, startup demos, networking dinner",
+      "expectedGuests": 220,
+      "status": "completed",
+      "layout": [
+        {
+          "id": "stage",
+          "label": "Main Stage",
+          "x": 391,
+          "y": 58
+        },
+        {
+          "id": "seating",
+          "label": "Audience Seating",
+          "x": 39,
+          "y": 179
+        },
+        {
+          "id": "buffet",
+          "label": "Buffet",
+          "x": 661,
+          "y": 544
+        },
+        {
+          "id": "checkin",
+          "label": "Check-In Desk",
+          "x": 143,
+          "y": 558
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "organizerId": "u1",
+      "venueId": "v2",
+      "name": "Summer Product Launch",
+      "type": "Brand Activation",
+      "date": "2026-07-02",
+      "time": "18:00",
+      "dressCode": "Smart casual",
+      "agenda": "Welcome, reveal, demos, reception",
+      "expectedGuests": 150,
+      "status": "planning",
+      "layout": [
+        {
+          "id": "demo",
+          "label": "Demo Booths",
+          "x": 50,
+          "y": 35
+        },
+        {
+          "id": "photo",
+          "label": "Photo Wall",
+          "x": 25,
+          "y": 70
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "organizerId": "u1",
+      "venueId": "v3",
+      "name": "Alexandria Tech Forum",
+      "type": "Conference",
+      "date": "2026-07-15",
+      "time": "09:30",
+      "dressCode": "Business formal",
+      "agenda": "Keynotes, workshops, investor meetups",
+      "expectedGuests": 110,
+      "status": "planning",
+      "layout": [
+        {
+          "id": "keynote",
+          "label": "Keynote Stage",
+          "x": 45,
+          "y": 20
+        },
+        {
+          "id": "workshops",
+          "label": "Workshop Pods",
+          "x": 20,
+          "y": 55
+        },
+        {
+          "id": "network",
+          "label": "Networking Lounge",
+          "x": 72,
+          "y": 60
+        }
+      ]
+    },
+    {
+      "id": "e4",
+      "organizerId": "u1",
+      "venueId": "v1",
+      "name": "Nile Charity Gala",
+      "type": "Fundraiser",
+      "date": "2026-07-22",
+      "time": "19:00",
+      "dressCode": "Black tie",
+      "agenda": "Reception, auction, dinner, live performance",
+      "expectedGuests": 260,
+      "status": "planning",
+      "layout": [
+        {
+          "id": "auction",
+          "label": "Auction Stage",
+          "x": 50,
+          "y": 25
+        },
+        {
+          "id": "dinner",
+          "label": "Banquet Tables",
+          "x": 40,
+          "y": 50
+        },
+        {
+          "id": "bar",
+          "label": "Cocktail Bar",
+          "x": 80,
+          "y": 70
+        }
+      ]
+    },
+    {
+      "id": "e5",
+      "organizerId": "u1",
+      "venueId": "v2",
+      "name": "Design Week Showcase",
+      "type": "Exhibition",
+      "date": "2026-08-05",
+      "time": "11:00",
+      "dressCode": "Creative casual",
+      "agenda": "Gallery walk, designer talks, pop-up installations",
+      "expectedGuests": 95,
+      "status": "planning",
+      "layout": [
+        {
+          "id": "gallery",
+          "label": "Main Gallery",
+          "x": 35,
+          "y": 30
+        },
+        {
+          "id": "install",
+          "label": "Installation Zone",
+          "x": 65,
+          "y": 45
+        },
+        {
+          "id": "talks",
+          "label": "Talks Corner",
+          "x": 15,
+          "y": 75
+        }
+      ]
+    },
+    {
+      "id": "e6",
+      "organizerId": "u1",
+      "venueId": "v1",
+      "name": "Corporate Leadership Retreat",
+      "type": "Retreat",
+      "date": "2026-08-20",
+      "time": "08:00",
+      "dressCode": "Business casual",
+      "agenda": "Strategy sessions, team workshops, closing dinner",
+      "expectedGuests": 85,
+      "status": "planning",
+      "layout": [
+        {
+          "id": "boardroom",
+          "label": "Strategy Room",
+          "x": 30,
+          "y": 25
+        },
+        {
+          "id": "breakout",
+          "label": "Breakout Pods",
+          "x": 60,
+          "y": 40
+        },
+        {
+          "id": "dining",
+          "label": "Closing Dinner",
+          "x": 45,
+          "y": 72
+        }
+      ]
+    },
+    {
+      "id": "e7",
+      "organizerId": "u1",
+      "venueId": "v3",
+      "name": "Mediterranean Food Festival",
+      "type": "Festival",
+      "date": "2026-09-10",
+      "time": "16:00",
+      "dressCode": "Casual",
+      "agenda": "Food stalls, chef demos, live music",
+      "expectedGuests": 320,
+      "status": "planning",
+      "layout": [
+        {
+          "id": "stalls",
+          "label": "Food Stalls",
+          "x": 25,
+          "y": 35
+        },
+        {
+          "id": "stage",
+          "label": "Chef Demo Stage",
+          "x": 55,
+          "y": 22
+        },
+        {
+          "id": "seating",
+          "label": "Outdoor Seating",
+          "x": 50,
+          "y": 68
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t1",
+      "eventId": "e1",
+      "title": "Confirm keynote seating",
+      "category": "Seating",
+      "status": "In Progress",
+      "dueDate": "2026-06-18",
+      "assignedTo": "u2",
+      "reminder": true,
+      "updatedAt": "2026-06-15T15:54:40.547Z"
+    },
+    {
+      "id": "t2",
+      "eventId": "e1",
+      "title": "Finalize lunch menu",
+      "category": "Catering",
+      "status": "Done",
+      "dueDate": "2026-06-19",
+      "assignedTo": "u3",
+      "reminder": true
+    },
+    {
+      "id": "t3",
+      "eventId": "e1",
+      "title": "Test registration tablets",
+      "category": "Logistics",
+      "status": "Done",
+      "dueDate": "2026-06-20",
+      "assignedTo": "u2",
+      "reminder": false
+    },
+    {
+      "id": "t7",
+      "eventId": "e1",
+      "title": "AV sound check",
+      "category": "Technical",
+      "status": "Done",
+      "dueDate": "2026-06-23",
+      "assignedTo": "u2",
+      "reminder": false
+    },
+    {
+      "id": "t8",
+      "eventId": "e1",
+      "title": "Staff welcome desk briefing",
+      "category": "Operations",
+      "status": "Done",
+      "dueDate": "2026-06-23",
+      "assignedTo": "u3",
+      "reminder": false
+    },
+    {
+      "id": "t9",
+      "eventId": "e1",
+      "title": "Post-event vendor wrap-up",
+      "category": "Finance",
+      "status": "In Progress",
+      "dueDate": "2026-06-26",
+      "assignedTo": "u2",
+      "reminder": true
+    },
+    {
+      "id": "t10",
+      "eventId": "e1",
+      "title": "Collect remaining feedback forms",
+      "category": "Guest experience",
+      "status": "Pending",
+      "dueDate": "2026-06-27",
+      "assignedTo": "u3",
+      "reminder": true
+    },
+    {
+      "id": "t4",
+      "eventId": "e2",
+      "title": "Prepare outdoor signage",
+      "category": "Logistics",
+      "status": "In Progress",
+      "dueDate": "2026-06-28",
+      "assignedTo": "u2",
+      "reminder": false
+    },
+    {
+      "id": "t11",
+      "eventId": "e2",
+      "title": "Confirm demo booth power",
+      "category": "Technical",
+      "status": "Pending",
+      "dueDate": "2026-06-30",
+      "assignedTo": "u2",
+      "reminder": true
+    },
+    {
+      "id": "t5",
+      "eventId": "e3",
+      "title": "Confirm speaker travel",
+      "category": "Logistics",
+      "status": "In Progress",
+      "dueDate": "2026-07-01",
+      "assignedTo": "u2",
+      "reminder": true
+    },
+    {
+      "id": "t12",
+      "eventId": "e3",
+      "title": "Print workshop materials",
+      "category": "Operations",
+      "status": "Pending",
+      "dueDate": "2026-07-08",
+      "assignedTo": "u3",
+      "reminder": false
+    },
+    {
+      "id": "t6",
+      "eventId": "e4",
+      "title": "Finalize auction catalog",
+      "category": "Finance",
+      "status": "Pending",
+      "dueDate": "2026-07-10",
+      "assignedTo": "u2",
+      "reminder": true
+    },
+    {
+      "id": "t13",
+      "eventId": "e4",
+      "title": "Rehearse live performance cue sheet",
+      "category": "Entertainment",
+      "status": "Not Assigned",
+      "dueDate": "2026-07-15",
+      "assignedTo": null,
+      "reminder": false
+    },
+    {
+      "id": "t14",
+      "eventId": "e5",
+      "title": "Install gallery lighting",
+      "category": "Technical",
+      "status": "Pending",
+      "dueDate": "2026-07-28",
+      "assignedTo": "u2",
+      "reminder": true
+    },
+    {
+      "id": "t15",
+      "eventId": "e1",
+      "title": "Set up check-in desk signage",
+      "category": "Operations",
+      "status": "Pending",
+      "dueDate": "2026-06-24",
+      "assignedTo": "u2",
+      "reminder": true
+    },
+    {
+      "id": "t16",
+      "eventId": "e1",
+      "title": "Coordinate buffet service timing",
+      "category": "Catering",
+      "status": "In Progress",
+      "dueDate": "2026-06-24",
+      "assignedTo": "u2",
+      "reminder": true
+    },
+    {
+      "id": "t17",
+      "eventId": "e1",
+      "title": "Monitor guest entrance queue",
+      "category": "Logistics",
+      "status": "Pending",
+      "dueDate": "2026-06-24",
+      "assignedTo": "u2",
+      "reminder": true
+    },
+    {
+      "id": "t18",
+      "eventId": "e1",
+      "title": "Prepare VIP seating cards",
+      "category": "Seating",
+      "status": "In Progress",
+      "dueDate": "2026-06-23",
+      "assignedTo": "u2",
+      "reminder": true
+    },
+    {
+      "id": "t19",
+      "eventId": "e1",
+      "title": "Escort vendors to loading dock",
+      "category": "Logistics",
+      "status": "Pending",
+      "dueDate": "2026-06-24",
+      "assignedTo": "u2",
+      "reminder": false
+    },
+    {
+      "id": "t20",
+      "eventId": "e1",
+      "title": "Run final walkthrough with setup team",
+      "category": "Operations",
+      "status": "In Progress",
+      "dueDate": "2026-06-24",
+      "assignedTo": "u2",
+      "reminder": true
+    },
+    {
+      "id": "t21",
+      "eventId": "e2",
+      "title": "Stage product reveal props",
+      "category": "Logistics",
+      "status": "Done",
+      "dueDate": "2026-06-24",
+      "assignedTo": "u2",
+      "reminder": true,
+      "updatedAt": "2026-06-17T18:13:01.371Z"
+    },
+    {
+      "id": "t22",
+      "eventId": "e2",
+      "title": "Brief ushers on seating plan",
+      "category": "Seating",
+      "status": "In Progress",
+      "dueDate": "2026-06-22",
+      "assignedTo": "u2",
+      "reminder": true
+    },
+    {
+      "id": "t23",
+      "eventId": "e2",
+      "title": "Test outdoor PA system",
+      "category": "Technical",
+      "status": "Pending",
+      "dueDate": "2026-06-24",
+      "assignedTo": "u2",
+      "reminder": false
+    },
+    {
+      "id": "t24",
+      "eventId": "e3",
+      "title": "Pack emergency supply kits",
+      "category": "Operations",
+      "status": "Pending",
+      "dueDate": "2026-06-24",
+      "assignedTo": "u2",
+      "reminder": true
+    },
+    {
+      "id": "t25",
+      "eventId": "e1",
+      "title": "Restock registration welcome packs",
+      "category": "Guest experience",
+      "status": "Pending",
+      "dueDate": "2026-06-24",
+      "assignedTo": "u3",
+      "reminder": true
+    }
+  ],
+  "budgets": [
+    {
+      "id": "b1",
+      "eventId": "e1",
+      "totalPlanned": 190000,
+      "plannedItems": [
+        {
+          "name": "Venue",
+          "amount": 45000
+        },
+        {
+          "name": "Catering",
+          "amount": 90000
+        },
+        {
+          "name": "AV",
+          "amount": 35000
+        },
+        {
+          "name": "Marketing",
+          "amount": 20000
+        }
+      ],
+      "actualExpenses": [
+        {
+          "id": "ex1",
+          "name": "Venue deposit",
+          "amount": 25000,
+          "paidOn": "2026-06-05"
+        },
+        {
+          "id": "ex2",
+          "name": "Catering advance",
+          "amount": 40000,
+          "paidOn": "2026-06-08"
+        },
+        {
+          "id": "ex18",
+          "name": "AV and lighting deposit",
+          "amount": 15000,
+          "paidOn": "2026-06-11"
+        },
+        {
+          "id": "ex19",
+          "name": "Digital marketing campaign",
+          "amount": 12000,
+          "paidOn": "2026-06-14"
+        },
+        {
+          "id": "ex20",
+          "name": "Final catering balance",
+          "amount": 35000,
+          "paidOn": "2026-06-22"
+        },
+        {
+          "id": "ex21",
+          "name": "Staff overtime day-of",
+          "amount": 6800,
+          "paidOn": "2026-06-25"
+        },
+        {
+          "id": "ex22",
+          "name": "Printing and signage",
+          "amount": 5400,
+          "paidOn": "2026-06-17"
+        }
+      ]
+    },
+    {
+      "id": "b2",
+      "eventId": "e2",
+      "totalPlanned": 185000,
+      "plannedItems": [
+        {
+          "name": "Venue",
+          "amount": 32000
+        },
+        {
+          "name": "Demo booths and staging",
+          "amount": 45000
+        },
+        {
+          "name": "AV and lighting",
+          "amount": 25000
+        },
+        {
+          "name": "Reception catering",
+          "amount": 55000
+        },
+        {
+          "name": "Marketing and branding",
+          "amount": 28000
+        }
+      ],
+      "actualExpenses": [
+        {
+          "id": "ex3",
+          "name": "Garden venue deposit",
+          "amount": 15000,
+          "paidOn": "2026-06-10"
+        },
+        {
+          "id": "ex4",
+          "name": "Booth design deposit",
+          "amount": 18000,
+          "paidOn": "2026-06-12"
+        },
+        {
+          "id": "ex5",
+          "name": "Launch print and signage",
+          "amount": 12000,
+          "paidOn": "2026-06-15"
+        }
+      ]
+    },
+    {
+      "id": "b3",
+      "eventId": "e3",
+      "totalPlanned": 210000,
+      "plannedItems": [
+        {
+          "name": "Venue rental",
+          "amount": 38000
+        },
+        {
+          "name": "Speaker fees",
+          "amount": 52000
+        },
+        {
+          "name": "Workshop materials",
+          "amount": 28000
+        },
+        {
+          "name": "Catering and coffee",
+          "amount": 42000
+        },
+        {
+          "name": "Marketing and registration",
+          "amount": 50000
+        }
+      ],
+      "actualExpenses": [
+        {
+          "id": "ex6",
+          "name": "Venue booking fee",
+          "amount": 12000,
+          "paidOn": "2026-06-18"
+        },
+        {
+          "id": "ex7",
+          "name": "Keynote speaker deposit",
+          "amount": 26000,
+          "paidOn": "2026-06-20"
+        }
+      ]
+    },
+    {
+      "id": "b4",
+      "eventId": "e4",
+      "totalPlanned": 245000,
+      "plannedItems": [
+        {
+          "name": "Venue and decor",
+          "amount": 68000
+        },
+        {
+          "name": "Gala catering",
+          "amount": 92000
+        },
+        {
+          "name": "Entertainment",
+          "amount": 35000
+        },
+        {
+          "name": "Auction production",
+          "amount": 22000
+        },
+        {
+          "name": "Security and staffing",
+          "amount": 18000
+        }
+      ],
+      "actualExpenses": [
+        {
+          "id": "ex8",
+          "name": "Decor concept deposit",
+          "amount": 22000,
+          "paidOn": "2026-06-22"
+        },
+        {
+          "id": "ex9",
+          "name": "Catering tasting and prep",
+          "amount": 14000,
+          "paidOn": "2026-06-25"
+        },
+        {
+          "id": "ex10",
+          "name": "Band booking fee",
+          "amount": 18000,
+          "paidOn": "2026-06-27"
+        }
+      ]
+    },
+    {
+      "id": "b5",
+      "eventId": "e5",
+      "totalPlanned": 132000,
+      "plannedItems": [
+        {
+          "name": "Venue",
+          "amount": 32000
+        },
+        {
+          "name": "Exhibition build-out",
+          "amount": 38000
+        },
+        {
+          "name": "Artist honorariums",
+          "amount": 24000
+        },
+        {
+          "name": "Promotion",
+          "amount": 18000
+        },
+        {
+          "name": "On-site crew",
+          "amount": 20000
+        }
+      ],
+      "actualExpenses": [
+        {
+          "id": "ex11",
+          "name": "Gallery wall installation",
+          "amount": 9500,
+          "paidOn": "2026-07-05"
+        },
+        {
+          "id": "ex12",
+          "name": "Designer travel advance",
+          "amount": 6000,
+          "paidOn": "2026-07-08"
+        }
+      ]
+    },
+    {
+      "id": "b6",
+      "eventId": "e6",
+      "totalPlanned": 298000,
+      "plannedItems": [
+        {
+          "name": "Venue and facilitation",
+          "amount": 55000
+        },
+        {
+          "name": "Workshop facilitators",
+          "amount": 48000
+        },
+        {
+          "name": "Accommodation support",
+          "amount": 62000
+        },
+        {
+          "name": "Meals and refreshments",
+          "amount": 73000
+        },
+        {
+          "name": "Materials and AV",
+          "amount": 60000
+        }
+      ],
+      "actualExpenses": [
+        {
+          "id": "ex13",
+          "name": "Facilitator contract deposit",
+          "amount": 24000,
+          "paidOn": "2026-07-12"
+        },
+        {
+          "id": "ex14",
+          "name": "Retreat materials order",
+          "amount": 18500,
+          "paidOn": "2026-07-15"
+        },
+        {
+          "id": "ex15",
+          "name": "AV package reservation",
+          "amount": 16000,
+          "paidOn": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "id": "b7",
+      "eventId": "e7",
+      "totalPlanned": 167500,
+      "plannedItems": [
+        {
+          "name": "Venue and permits",
+          "amount": 42000
+        },
+        {
+          "name": "Vendor booths",
+          "amount": 54000
+        },
+        {
+          "name": "Chef demos and supplies",
+          "amount": 31500
+        },
+        {
+          "name": "Live music",
+          "amount": 22000
+        },
+        {
+          "name": "Festival marketing",
+          "amount": 18000
+        }
+      ],
+      "actualExpenses": [
+        {
+          "id": "ex16",
+          "name": "Permit application fees",
+          "amount": 8500,
+          "paidOn": "2026-07-20"
+        },
+        {
+          "id": "ex17",
+          "name": "Stage and sound deposit",
+          "amount": 11000,
+          "paidOn": "2026-07-25"
+        }
+      ]
+    }
+  ],
+  "vendors": [
+    {
+      "id": "vendor1",
+      "userId": "u4",
+      "companyName": "Nile Catering Co.",
+      "supplies": [
+        "Buffet",
+        "Coffee breaks",
+        "Serving staff"
+      ],
+      "mainLocation": "Giza",
+      "pricingList": "Coffee break from 220 EGP/person, buffet from 540 EGP/person",
+      "contact": "01000000001",
+      "deliveryStatus": "Preparing"
+    },
+    {
+      "id": "vendor2",
+      "userId": null,
+      "companyName": "Spark AV",
+      "supplies": [
+        "Sound system",
+        "Lighting",
+        "Projectors"
+      ],
+      "mainLocation": "Cairo",
+      "pricingList": "Full conference AV package from 28000 EGP",
+      "contact": "01000000002",
+      "deliveryStatus": "Not Ordered"
+    }
+  ],
+  "sourcingRequests": [
+    {
+      "id": "sr1",
+      "organizerId": "u1",
+      "vendorId": "vendor1",
+      "eventId": "e1",
+      "requestedItems": "Buffet for 220 guests with vegetarian options",
+      "quantities": "220 meals",
+      "deliveryDate": "2026-06-24",
+      "eventLocation": "Nile View Hall, Cairo",
+      "organizerContact": "jonathan@giuberlin",
+      "status": "Accepted",
+      "note": "Vegetarian meals should be labelled."
+    },
+    {
+      "id": "sr2",
+      "organizerId": "u1",
+      "vendorId": "vendor2",
+      "eventId": "e1",
+      "requestedItems": "Sound system, lighting, and projectors",
+      "quantities": "1 full AV package",
+      "deliveryDate": "2026-06-24",
+      "eventLocation": "Nile View Hall, Cairo",
+      "organizerContact": "jonathan@giuberlin",
+      "status": "Out for Delivery",
+      "note": "Setup crew arrives at 8:00 AM."
+    },
+    {
+      "id": "sr3",
+      "organizerId": "u1",
+      "vendorId": "vendor1",
+      "eventId": "e1",
+      "requestedItems": "Coffee break stations",
+      "quantities": "3 stations",
+      "deliveryDate": "2026-06-24",
+      "eventLocation": "Nile View Hall, Cairo",
+      "organizerContact": "jonathan@giuberlin",
+      "status": "Preparing",
+      "note": "Refill every 90 minutes."
+    },
+    {
+      "id": "sr4",
+      "organizerId": "u1",
+      "vendorId": "vendor1",
+      "eventId": "e1",
+      "requestedItems": "Closing dessert buffet",
+      "quantities": "220 portions",
+      "deliveryDate": "2026-06-24",
+      "eventLocation": "Nile View Hall, Cairo",
+      "organizerContact": "jonathan@giuberlin",
+      "status": "Delivered",
+      "note": "Delivered and confirmed by staff."
+    },
+    {
+      "id": "sr8",
+      "organizerId": "u1",
+      "vendorId": "vendor1",
+      "eventId": "e2",
+      "requestedItems": "Launch reception canapes and desserts",
+      "quantities": "150 guests",
+      "deliveryDate": "2026-07-02",
+      "eventLocation": "Garden Pop-Up Space, New Cairo",
+      "organizerContact": "jonathan@giuberlin",
+      "status": "Pending",
+      "note": "Need vegetarian and gluten-free options labelled."
+    },
+    {
+      "id": "sr9",
+      "organizerId": "u1",
+      "vendorId": "vendor1",
+      "eventId": "e4",
+      "requestedItems": "Gala dinner service and plated desserts",
+      "quantities": "260 guests",
+      "deliveryDate": "2026-07-22",
+      "eventLocation": "Nile View Hall, Cairo",
+      "organizerContact": "jonathan@giuberlin",
+      "status": "Pending",
+      "note": "Black-tie service format."
+    },
+    {
+      "id": "sr5",
+      "organizerId": "u1",
+      "vendorId": "vendor2",
+      "eventId": "e2",
+      "requestedItems": "Outdoor PA system and stage lighting",
+      "quantities": "1 launch setup",
+      "deliveryDate": "2026-07-02",
+      "eventLocation": "Garden Pop-Up Space, New Cairo",
+      "organizerContact": "jonathan@giuberlin",
+      "status": "Accepted",
+      "note": "Weather backup plan required."
+    },
+    {
+      "id": "sr6",
+      "organizerId": "u1",
+      "vendorId": "vendor1",
+      "eventId": "e3",
+      "requestedItems": "Conference lunch and coffee breaks",
+      "quantities": "110 guests, 2 days",
+      "deliveryDate": "2026-07-15",
+      "eventLocation": "Corniche Rooftop Lounge, Alexandria",
+      "organizerContact": "jonathan@giuberlin",
+      "status": "Preparing",
+      "note": "Halal and vegetarian trays labelled separately."
+    },
+    {
+      "id": "sr7",
+      "organizerId": "u1",
+      "vendorId": "vendor2",
+      "eventId": "e4",
+      "requestedItems": "Auction stage lighting and microphones",
+      "quantities": "1 gala package",
+      "deliveryDate": "2026-07-22",
+      "eventLocation": "Nile View Hall, Cairo",
+      "organizerContact": "jonathan@giuberlin",
+      "status": "Pending",
+      "note": "Coordinate with live band arrival."
+    },
+    {
+      "id": "sr10",
+      "organizerId": "u1",
+      "vendorId": "vendor1",
+      "eventId": "e1",
+      "requestedItems": "Summit buffet service",
+      "quantities": "220 meals",
+      "deliveryDate": "2026-06-24",
+      "eventLocation": "Nile View Hall, Cairo",
+      "organizerContact": "jonathan@giuberlin",
+      "status": "Delivered",
+      "note": "Main catering service completed and confirmed on site."
+    },
+    {
+      "id": "sr11",
+      "organizerId": "u1",
+      "vendorId": "vendor1",
+      "eventId": "e2",
+      "requestedItems": "Welcome drinks and hot appetizers",
+      "quantities": "150 guests",
+      "deliveryDate": "2026-07-02",
+      "eventLocation": "Garden Pop-Up Space, New Cairo",
+      "organizerContact": "jonathan@giuberlin",
+      "status": "Out for Delivery",
+      "note": "Chilled setup required on arrival."
+    },
+    {
+      "id": "sr12",
+      "organizerId": "u1",
+      "vendorId": "vendor1",
+      "eventId": "e3",
+      "requestedItems": "Day-two conference lunch boxes",
+      "quantities": "110 boxes",
+      "deliveryDate": "2026-07-16",
+      "eventLocation": "Corniche Rooftop Lounge, Alexandria",
+      "organizerContact": "jonathan@giuberlin",
+      "status": "Delayed",
+      "note": "Delivery delay reported by vendor. Traffic on Alexandria corniche."
+    },
+    {
+      "id": "sr13",
+      "organizerId": "u1",
+      "vendorId": "vendor1",
+      "eventId": "e5",
+      "requestedItems": "Exhibition opening cocktail reception",
+      "quantities": "95 guests",
+      "deliveryDate": "2026-08-05",
+      "eventLocation": "Garden Pop-Up Space, New Cairo",
+      "organizerContact": "jonathan@giuberlin",
+      "status": "Declined",
+      "note": "Declined due to staffing conflict on that date."
+    },
+    {
+      "id": "sr14",
+      "organizerId": "u1",
+      "vendorId": "vendor1",
+      "eventId": "e5",
+      "requestedItems": "Gallery walk refreshments",
+      "quantities": "95 guests",
+      "deliveryDate": "2026-08-05",
+      "eventLocation": "Garden Pop-Up Space, New Cairo",
+      "organizerContact": "jonathan@giuberlin",
+      "status": "Pending",
+      "note": "Light canapes and sparkling juice only."
+    },
+    {
+      "id": "sr15",
+      "organizerId": "u1",
+      "vendorId": "vendor1",
+      "eventId": "e2",
+      "requestedItems": "Product launch tasting menu",
+      "quantities": "150 guests",
+      "deliveryDate": "2026-07-02",
+      "eventLocation": "Garden Pop-Up Space, New Cairo",
+      "organizerContact": "jonathan@giuberlin",
+      "status": "Delivered",
+      "note": "Tasting stations cleared by staff at 21:30."
+    }
+  ],
+  "invoices": [
+    {
+      "id": "inv1",
+      "vendorId": "vendor1",
+      "eventId": "e1",
+      "amount": 118800,
+      "status": "Approved",
+      "breakdown": "Buffet 220 x 540 EGP",
+      "submittedAt": "2026-06-12",
+      "reviewNote": "Approved after itemized review.",
+      "reviewedBy": "u1",
+      "reviewedAt": "2026-06-15T15:54:40.557Z"
+    },
+    {
+      "id": "inv2",
+      "vendorId": "vendor2",
+      "eventId": "e1",
+      "amount": 28000,
+      "status": "Approved",
+      "breakdown": "Full conference AV package",
+      "submittedAt": "2026-06-14"
+    },
+    {
+      "id": "inv3",
+      "vendorId": "vendor1",
+      "eventId": "e2",
+      "amount": 81000,
+      "status": "Approved",
+      "breakdown": "Launch reception catering 150 guests",
+      "submittedAt": "2026-06-18",
+      "reviewNote": "Approved — awaiting finance transfer."
+    },
+    {
+      "id": "inv4",
+      "vendorId": "vendor2",
+      "eventId": "e1",
+      "amount": 15000,
+      "status": "Rejected",
+      "breakdown": "Extra lighting rigs (unbudgeted)",
+      "submittedAt": "2026-06-10",
+      "reviewNote": "Declined — not in approved budget."
+    },
+    {
+      "id": "inv5",
+      "vendorId": "vendor1",
+      "eventId": "e1",
+      "amount": 26400,
+      "status": "Paid",
+      "breakdown": "Coffee break stations x 3",
+      "submittedAt": "2026-06-24",
+      "reviewNote": "Settled after event closeout."
+    },
+    {
+      "id": "inv6",
+      "vendorId": "vendor2",
+      "eventId": "e3",
+      "amount": 31500,
+      "status": "Pending Review",
+      "breakdown": "Workshop AV and microphones",
+      "submittedAt": "2026-06-21"
+    },
+    {
+      "id": "inv7",
+      "vendorId": "vendor1",
+      "eventId": "e4",
+      "amount": 156000,
+      "status": "Pending Review",
+      "breakdown": "Gala dinner catering 260 guests",
+      "submittedAt": "2026-06-26"
+    },
+    {
+      "id": "inv8",
+      "vendorId": "vendor2",
+      "eventId": "e2",
+      "amount": 24500,
+      "status": "Approved",
+      "breakdown": "Outdoor launch lighting package",
+      "submittedAt": "2026-06-20"
+    },
+    {
+      "id": "inv9",
+      "vendorId": "vendor1",
+      "eventId": "e3",
+      "amount": 42000,
+      "status": "Rejected",
+      "breakdown": "Extra dessert stations (not in scope)",
+      "submittedAt": "2026-06-19",
+      "reviewNote": "Declined — organizer did not approve add-on items."
+    },
+    {
+      "id": "inv10",
+      "vendorId": "vendor1",
+      "eventId": "e2",
+      "amount": 67500,
+      "status": "Approved",
+      "breakdown": "Product launch tasting menu 150 guests",
+      "submittedAt": "2026-07-03",
+      "reviewNote": "Approved — submit payment details to organizer."
+    },
+    {
+      "id": "inv11",
+      "vendorId": "vendor1",
+      "eventId": "e1",
+      "amount": 99000,
+      "status": "Pending Review",
+      "breakdown": "Closing dessert buffet 220 portions",
+      "submittedAt": "2026-06-25"
+    },
+    {
+      "id": "inv12",
+      "vendorId": "vendor1",
+      "eventId": "e1",
+      "amount": 118800,
+      "status": "Paid",
+      "breakdown": "Summit buffet service 220 meals",
+      "submittedAt": "2026-06-25",
+      "reviewNote": "Paid in full after summit closeout."
+    }
+  ],
+  "guests": [
+    {
+      "id": "g1",
+      "eventId": "e1",
+      "name": "Youssef Samir",
+      "email": "youssef@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "No nuts",
+      "specialRequirements": "Wheelchair access near entrance",
+      "checkedIn": true,
+      "invitationSent": true,
+      "qrCode": "GUEST-e1-g1"
+    },
+    {
+      "id": "g31",
+      "eventId": "e2",
+      "name": "Youssef Samir",
+      "email": "youssef@example.test",
+      "rsvp": "Maybe",
+      "dietaryPreference": "Vegetarian",
+      "specialRequirements": "",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e2-g31"
+    },
+    {
+      "id": "g2",
+      "eventId": "e1",
+      "name": "Nour Khaled",
+      "email": "nour@example.test",
+      "rsvp": "Maybe",
+      "dietaryPreference": "Vegetarian",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e1-g2"
+    },
+    {
+      "id": "g3",
+      "eventId": "e1",
+      "name": "Karim Fawzy",
+      "email": "karim@example.test",
+      "rsvp": "Not Attending",
+      "dietaryPreference": "None",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e1-g3"
+    },
+    {
+      "id": "g4",
+      "eventId": "e1",
+      "name": "Mariam Hassan",
+      "email": "mariam.hassan@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "Halal",
+      "checkedIn": true,
+      "invitationSent": true,
+      "qrCode": "GUEST-e1-g4"
+    },
+    {
+      "id": "g5",
+      "eventId": "e1",
+      "name": "Ahmed El-Sayed",
+      "email": "ahmed.elsayed@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "None",
+      "checkedIn": true,
+      "invitationSent": true,
+      "qrCode": "GUEST-e1-g5"
+    },
+    {
+      "id": "g6",
+      "eventId": "e1",
+      "name": "Sara Ibrahim",
+      "email": "sara.ibrahim@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "Vegan",
+      "checkedIn": true,
+      "invitationSent": true,
+      "qrCode": "GUEST-e1-g6"
+    },
+    {
+      "id": "g7",
+      "eventId": "e1",
+      "name": "Omar Rashid",
+      "email": "omar.rashid@example.test",
+      "rsvp": "Maybe",
+      "dietaryPreference": "Gluten-free",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e1-g7"
+    },
+    {
+      "id": "g8",
+      "eventId": "e1",
+      "name": "Layla Mostafa",
+      "email": "layla.mostafa@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "Vegetarian",
+      "checkedIn": false,
+      "invitationSent": false,
+      "qrCode": "GUEST-e1-g8"
+    },
+    {
+      "id": "g9",
+      "eventId": "e1",
+      "name": "Hassan Ali",
+      "email": "hassan.ali@example.test",
+      "rsvp": "Not Attending",
+      "dietaryPreference": "None",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e1-g9"
+    },
+    {
+      "id": "g10",
+      "eventId": "e1",
+      "name": "Dina Farouk",
+      "email": "dina.farouk@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "Lactose-free",
+      "checkedIn": true,
+      "invitationSent": true,
+      "qrCode": "GUEST-e1-g10"
+    },
+    {
+      "id": "g11",
+      "eventId": "e1",
+      "name": "Tarek Nabil",
+      "email": "tarek.nabil@example.test",
+      "rsvp": "Maybe",
+      "dietaryPreference": "None",
+      "checkedIn": false,
+      "invitationSent": false,
+      "qrCode": "GUEST-e1-g11"
+    },
+    {
+      "id": "g12",
+      "eventId": "e1",
+      "name": "Rana Adel",
+      "email": "rana.adel@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "Halal",
+      "checkedIn": true,
+      "invitationSent": true,
+      "qrCode": "GUEST-e1-g12"
+    },
+    {
+      "id": "g13",
+      "eventId": "e2",
+      "name": "Mona Sherif",
+      "email": "mona.sherif@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "None",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e2-g13"
+    },
+    {
+      "id": "g14",
+      "eventId": "e2",
+      "name": "Khaled Mansour",
+      "email": "khaled.mansour@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "Vegetarian",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e2-g14"
+    },
+    {
+      "id": "g15",
+      "eventId": "e2",
+      "name": "Nada Wael",
+      "email": "nada.wael@example.test",
+      "rsvp": "Maybe",
+      "dietaryPreference": "Vegan",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e2-g15"
+    },
+    {
+      "id": "g16",
+      "eventId": "e2",
+      "name": "Yassin Hany",
+      "email": "yassin.hany@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "None",
+      "checkedIn": false,
+      "invitationSent": false,
+      "qrCode": "GUEST-e2-g16"
+    },
+    {
+      "id": "g17",
+      "eventId": "e2",
+      "name": "Heba Salah",
+      "email": "heba.salah@example.test",
+      "rsvp": "Not Attending",
+      "dietaryPreference": "Gluten-free",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e2-g17"
+    },
+    {
+      "id": "g18",
+      "eventId": "e3",
+      "name": "Amir Lotfy",
+      "email": "amir.lotfy@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "None",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e3-g18"
+    },
+    {
+      "id": "g19",
+      "eventId": "e3",
+      "name": "Salma Reda",
+      "email": "salma.reda@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "Halal",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e3-g19"
+    },
+    {
+      "id": "g20",
+      "eventId": "e3",
+      "name": "Fady Emad",
+      "email": "fady.emad@example.test",
+      "rsvp": "Maybe",
+      "dietaryPreference": "None",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e3-g20"
+    },
+    {
+      "id": "g21",
+      "eventId": "e4",
+      "name": "Ines Mahmoud",
+      "email": "ines.mahmoud@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "Vegetarian",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e4-g21"
+    },
+    {
+      "id": "g22",
+      "eventId": "e4",
+      "name": "Walid Gamal",
+      "email": "walid.gamal@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "None",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e4-g22"
+    },
+    {
+      "id": "g23",
+      "eventId": "e4",
+      "name": "Hana Zaki",
+      "email": "hana.zaki@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "Lactose-free",
+      "checkedIn": false,
+      "invitationSent": false,
+      "qrCode": "GUEST-e4-g23"
+    },
+    {
+      "id": "g24",
+      "eventId": "e5",
+      "name": "Bassem Fouad",
+      "email": "bassem.fouad@example.test",
+      "rsvp": "Maybe",
+      "dietaryPreference": "None",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e5-g24"
+    },
+    {
+      "id": "g25",
+      "eventId": "e5",
+      "name": "Lina Ashraf",
+      "email": "lina.ashraf@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "Vegan",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e5-g25"
+    },
+    {
+      "id": "g26",
+      "eventId": "e6",
+      "name": "Sherif Kamal",
+      "email": "sherif.kamal@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "None",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e6-g26"
+    },
+    {
+      "id": "g27",
+      "eventId": "e6",
+      "name": "Nadia Fathy",
+      "email": "nadia.fathy@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "Halal",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e6-g27"
+    },
+    {
+      "id": "g28",
+      "eventId": "e7",
+      "name": "Ehab Soliman",
+      "email": "ehab.soliman@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "None",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e7-g28"
+    },
+    {
+      "id": "g29",
+      "eventId": "e7",
+      "name": "Reem Osama",
+      "email": "reem.osama@example.test",
+      "rsvp": "Maybe",
+      "dietaryPreference": "Vegetarian",
+      "checkedIn": false,
+      "invitationSent": true,
+      "qrCode": "GUEST-e7-g29"
+    },
+    {
+      "id": "g30",
+      "eventId": "e7",
+      "name": "Mahmoud Tarek",
+      "email": "mahmoud.tarek@example.test",
+      "rsvp": "Attending",
+      "dietaryPreference": "Gluten-free",
+      "checkedIn": false,
+      "invitationSent": false,
+      "qrCode": "GUEST-e7-g30"
+    }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "eventId": "e1",
+      "audience": "guests",
+      "body": "Welcome to Cairo Startup Summit. Registration opens at 9:30.",
+      "sentAt": "2026-06-24T08:30:00.000Z",
+      "seenBy": [
+        "g1"
+      ],
+      "receivedBy": [
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g6",
+        "g7",
+        "g8",
+        "g9",
+        "g10",
+        "g11",
+        "g12"
+      ]
+    },
+    {
+      "id": "m2",
+      "eventId": "e1",
+      "audience": "guests",
+      "body": "Keynote moved to the main stage. Please proceed from the lobby.",
+      "sentAt": "2026-06-24T10:15:00.000Z",
+      "seenBy": [
+        "g1",
+        "g4",
+        "g5"
+      ],
+      "receivedBy": [
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g6",
+        "g7",
+        "g8",
+        "g9",
+        "g10",
+        "g11",
+        "g12"
+      ]
+    },
+    {
+      "id": "m3",
+      "eventId": "e1",
+      "audience": "guests",
+      "body": "Lunch service starts at 12:30 in the buffet area.",
+      "sentAt": "2026-06-24T12:00:00.000Z",
+      "seenBy": [
+        "g1",
+        "g4",
+        "g5",
+        "g6",
+        "g10"
+      ],
+      "receivedBy": [
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g6",
+        "g7",
+        "g8",
+        "g9",
+        "g10",
+        "g11",
+        "g12"
+      ]
+    },
+    {
+      "id": "m5",
+      "eventId": "e1",
+      "audience": "guests",
+      "body": "Panel discussion moved to Room B. Follow signage in the lobby.",
+      "sentAt": "2026-06-24T11:00:00.000Z",
+      "seenBy": [
+        "g1",
+        "g5",
+        "g6",
+        "g12"
+      ],
+      "receivedBy": [
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g6",
+        "g7",
+        "g8",
+        "g9",
+        "g10",
+        "g11",
+        "g12"
+      ]
+    },
+    {
+      "id": "m6",
+      "eventId": "e1",
+      "audience": "guests",
+      "body": "Thank you for attending Cairo Startup Summit. Share your feedback in the guest portal.",
+      "sentAt": "2026-06-24T17:30:00.000Z",
+      "seenBy": [
+        "g1",
+        "g4",
+        "g10",
+        "g12"
+      ],
+      "receivedBy": [
+        "g1",
+        "g2",
+        "g3",
+        "g4",
+        "g5",
+        "g6",
+        "g7",
+        "g8",
+        "g9",
+        "g10",
+        "g11",
+        "g12"
+      ]
+    },
+    {
+      "id": "m4",
+      "eventId": "e2",
+      "audience": "guests",
+      "body": "Summer Product Launch doors open at 17:30. Bring your QR code.",
+      "sentAt": "2026-07-02T16:00:00.000Z",
+      "seenBy": [],
+      "receivedBy": [
+        "g13",
+        "g14",
+        "g15",
+        "g16",
+        "g17",
+        "g31"
+      ]
+    },
+    {
+      "id": "m7",
+      "eventId": "e1",
+      "audience": "unseen guests",
+      "body": "Reminder: Keynote moved to the main stage. Please proceed from the lobby.",
+      "sentAt": "2026-06-24T10:45:00.000Z",
+      "seenBy": [],
+      "receivedBy": [
+        "g2",
+        "g3",
+        "g7",
+        "g8",
+        "g9",
+        "g11"
+      ]
+    }
+  ],
+  "bookingRequests": [
+    {
+      "id": "br1",
+      "organizerId": "u1",
+      "venueId": "v1",
+      "eventType": "Conference",
+      "date": "2026-06-24",
+      "attendees": 220,
+      "specialRequirements": "Stage, AV, buffet area",
+      "status": "Approved",
+      "ownerMessage": "Approved at listed price."
+    },
+    {
+      "id": "br2",
+      "organizerId": "u1",
+      "venueId": "v2",
+      "eventType": "Brand Activation",
+      "date": "2026-07-02",
+      "attendees": 150,
+      "specialRequirements": "Outdoor demo booths",
+      "status": "Pending",
+      "ownerMessage": ""
+    },
+    {
+      "id": "br3",
+      "organizerId": "u1",
+      "venueId": "v3",
+      "eventType": "Executive Gala",
+      "date": "2026-07-18",
+      "attendees": 95,
+      "specialRequirements": "VIP lounge, valet, plated dinner service",
+      "status": "Approved",
+      "ownerMessage": "Confirmed. Rooftop deck reserved for your guests."
+    },
+    {
+      "id": "br4",
+      "organizerId": "u1",
+      "venueId": "v1",
+      "eventType": "Investor Briefing",
+      "date": "2026-07-10",
+      "attendees": 280,
+      "specialRequirements": "Theatre seating and breakout rooms",
+      "status": "Declined",
+      "ownerMessage": "Capacity exceeds our recommended load for this layout."
+    },
+    {
+      "id": "br5",
+      "organizerId": "u1",
+      "venueId": "v2",
+      "eventType": "Summer Showcase",
+      "date": "2026-09-05",
+      "attendees": 160,
+      "specialRequirements": "Outdoor stage and product demo pods",
+      "status": "Approved",
+      "ownerMessage": "Approved with standard garden setup."
+    },
+    {
+      "id": "br6",
+      "organizerId": "u1",
+      "venueId": "v1",
+      "eventType": "Leadership Workshop",
+      "date": "2026-08-01",
+      "attendees": 80,
+      "specialRequirements": "Classroom pods, coffee stations",
+      "status": "Pending",
+      "ownerMessage": ""
+    },
+    {
+      "id": "br7",
+      "organizerId": "u1",
+      "venueId": "v2",
+      "eventType": "Outdoor Reception",
+      "date": "2026-06-28",
+      "attendees": 120,
+      "specialRequirements": "Evening lighting and canopy backup",
+      "status": "Declined",
+      "ownerMessage": "Date blocked for maintenance on outdoor power lines."
+    },
+    {
+      "id": "br8",
+      "organizerId": "u1",
+      "venueId": "v3",
+      "eventType": "Networking Reception",
+      "date": "2026-08-20",
+      "attendees": 110,
+      "specialRequirements": "Cocktail tables, skyline photo backdrop",
+      "status": "Pending",
+      "ownerMessage": ""
+    },
+    {
+      "id": "br9",
+      "organizerId": "u1",
+      "venueId": "v3",
+      "eventType": "Charity Auction",
+      "date": "2026-08-15",
+      "attendees": 100,
+      "specialRequirements": "Auction stage, silent bid tables",
+      "status": "Pending",
+      "ownerMessage": ""
+    },
+    {
+      "id": "br10",
+      "organizerId": "u1",
+      "venueId": "v1",
+      "eventType": "Product Training",
+      "date": "2026-06-29",
+      "attendees": 60,
+      "specialRequirements": "Hands-on demo stations",
+      "status": "Declined",
+      "ownerMessage": "Venue unavailable on requested date."
+    },
+    {
+      "id": "br11",
+      "organizerId": "u7",
+      "venueId": "v1",
+      "eventType": "Tech Hackathon",
+      "date": "2026-07-05",
+      "attendees": 200,
+      "specialRequirements": "24-hour power, lounge area, overnight security",
+      "status": "Pending",
+      "ownerMessage": ""
+    },
+    {
+      "id": "br12",
+      "organizerId": "u1",
+      "venueId": "v2",
+      "eventType": "Fashion Pop-Up",
+      "date": "2026-07-12",
+      "attendees": 90,
+      "specialRequirements": "Runway strip, changing rooms, photo corner",
+      "status": "Approved",
+      "ownerMessage": "Garden runway layout confirmed."
+    },
+    {
+      "id": "br13",
+      "organizerId": "u7",
+      "venueId": "v3",
+      "eventType": "Press Launch",
+      "date": "2026-09-12",
+      "attendees": 70,
+      "specialRequirements": "Media risers, branded backdrop, cocktail service",
+      "status": "Pending",
+      "ownerMessage": ""
+    },
+    {
+      "id": "br14",
+      "organizerId": "u1",
+      "venueId": "v1",
+      "eventType": "Annual General Meeting",
+      "date": "2026-10-10",
+      "attendees": 250,
+      "specialRequirements": "Translation booths, voting stations",
+      "status": "Approved",
+      "ownerMessage": "Full hall reserved with translation booth setup."
+    },
+    {
+      "id": "br15",
+      "organizerId": "u7",
+      "venueId": "v2",
+      "eventType": "Outdoor Music Session",
+      "date": "2026-08-08",
+      "attendees": 175,
+      "specialRequirements": "Stage, sound limit compliance, beverage carts",
+      "status": "Declined",
+      "ownerMessage": "Outdoor sound limits cannot accommodate live band format."
+    },
+    {
+      "id": "br16",
+      "organizerId": "u1",
+      "venueId": "v3",
+      "eventType": "Board Dinner",
+      "date": "2026-09-22",
+      "attendees": 45,
+      "specialRequirements": "Private dining room, presentation screen",
+      "status": "Approved",
+      "ownerMessage": "VIP lounge configured for executive seating."
+    },
+    {
+      "id": "br17",
+      "organizerId": "u7",
+      "venueId": "v4",
+      "eventType": "Podcast Live Recording",
+      "date": "2026-07-25",
+      "attendees": 40,
+      "specialRequirements": "Acoustic panels, streaming uplink",
+      "status": "Pending",
+      "ownerMessage": ""
+    },
+    {
+      "id": "br18",
+      "organizerId": "u1",
+      "venueId": "v4",
+      "eventType": "Creator Meetup",
+      "date": "2026-08-28",
+      "attendees": 55,
+      "specialRequirements": "Panel seating, ring light stations",
+      "status": "Approved",
+      "ownerMessage": "Loft approved at weekday rate."
+    },
+    {
+      "id": "br19",
+      "organizerId": "u7",
+      "venueId": "v1",
+      "eventType": "UX Design Summit",
+      "date": "2026-10-18",
+      "attendees": 190,
+      "specialRequirements": "Workshop tables, sponsor booths",
+      "status": "Pending",
+      "ownerMessage": ""
+    },
+    {
+      "id": "br20",
+      "organizerId": "u1",
+      "venueId": "v2",
+      "eventType": "Corporate Family Day",
+      "date": "2026-06-20",
+      "attendees": 130,
+      "specialRequirements": "Kids zone, BBQ setup, shaded seating",
+      "status": "Approved",
+      "ownerMessage": "Past event approved before execution."
+    },
+    {
+      "id": "br21",
+      "organizerId": "u7",
+      "venueId": "v3",
+      "eventType": "Wedding Reception",
+      "date": "2026-09-01",
+      "attendees": 130,
+      "specialRequirements": "Dance floor, floral arch, DJ booth",
+      "status": "Declined",
+      "ownerMessage": "We do not host private wedding receptions at this location."
+    },
+    {
+      "id": "br22",
+      "organizerId": "u1",
+      "venueId": "v1",
+      "eventType": "Data Analytics Forum",
+      "date": "2026-08-12",
+      "attendees": 185,
+      "specialRequirements": "Dual breakout rooms, live demo lab",
+      "status": "Pending",
+      "ownerMessage": ""
+    },
+    {
+      "id": "br23",
+      "organizerId": "u7",
+      "venueId": "v2",
+      "eventType": "Food Truck Rally",
+      "date": "2026-08-25",
+      "attendees": 140,
+      "specialRequirements": "Vendor stalls, waste management plan",
+      "status": "Pending",
+      "ownerMessage": ""
+    },
+    {
+      "id": "br24",
+      "organizerId": "u1",
+      "venueId": "v3",
+      "eventType": "Investor Mixer",
+      "date": "2026-10-03",
+      "attendees": 85,
+      "specialRequirements": "Speed networking rotation, champagne service",
+      "status": "Approved",
+      "ownerMessage": "Rooftop mixer package confirmed."
+    },
+    {
+      "id": "br25",
+      "organizerId": "u7",
+      "venueId": "v1",
+      "eventType": "Healthcare Innovation Day",
+      "date": "2026-11-08",
+      "attendees": 210,
+      "specialRequirements": "Exhibition pods, medical demo area",
+      "status": "Pending",
+      "ownerMessage": ""
+    },
+    {
+      "id": "br26",
+      "organizerId": "u1",
+      "venueId": "v2",
+      "eventType": "Startup Demo Day",
+      "date": "2026-11-15",
+      "attendees": 120,
+      "specialRequirements": "Pitch stage, investor lounge",
+      "status": "Approved",
+      "ownerMessage": "Approved with extended garden hours."
+    },
+    {
+      "id": "br27",
+      "organizerId": "u7",
+      "venueId": "v3",
+      "eventType": "Art Gallery Opening",
+      "date": "2026-06-18",
+      "attendees": 75,
+      "specialRequirements": "Wall mounting, ambient lighting",
+      "status": "Declined",
+      "ownerMessage": "Art installation requirements exceed venue insurance coverage."
+    },
+    {
+      "id": "br28",
+      "organizerId": "u1",
+      "venueId": "v4",
+      "eventType": "Photography Workshop",
+      "date": "2026-09-30",
+      "attendees": 25,
+      "specialRequirements": "Natural light setup, backdrop stands",
+      "status": "Pending",
+      "ownerMessage": ""
+    }
+  ],
+  "feedback": [
+    {
+      "id": "f2",
+      "eventId": "e1",
+      "guestId": "g2",
+      "overall": 3,
+      "food": 3,
+      "venue": 4,
+      "organization": 4,
+      "comments": "Registration queue was a little long."
+    },
+    {
+      "id": "f3",
+      "eventId": "e1",
+      "guestId": "g4",
+      "overall": 4,
+      "food": 4,
+      "venue": 5,
+      "organization": 4,
+      "comments": "Excellent river view from the main hall."
+    },
+    {
+      "id": "f4",
+      "eventId": "e4",
+      "guestId": "g21",
+      "overall": 5,
+      "food": 5,
+      "venue": 5,
+      "organization": 5,
+      "comments": "Beautiful gala setup and smooth auction flow."
+    },
+    {
+      "id": "f5",
+      "eventId": "e4",
+      "guestId": "g22",
+      "overall": 4,
+      "food": 4,
+      "venue": 4,
+      "organization": 4,
+      "comments": "Elegant venue, seating was comfortable throughout."
+    },
+    {
+      "id": "f6",
+      "eventId": "e6",
+      "guestId": "g26",
+      "overall": 4,
+      "food": 3,
+      "venue": 4,
+      "organization": 5,
+      "comments": "Breakout rooms were well arranged for team sessions."
+    },
+    {
+      "id": "f7",
+      "eventId": "e6",
+      "guestId": "g27",
+      "overall": 5,
+      "food": 4,
+      "venue": 5,
+      "organization": 4,
+      "comments": "Professional atmosphere ideal for leadership workshops."
+    },
+    {
+      "id": "f8",
+      "eventId": "e2",
+      "guestId": "g13",
+      "overall": 4,
+      "food": 4,
+      "venue": 4,
+      "organization": 4,
+      "comments": "Outdoor garden space worked well for the product reveal."
+    },
+    {
+      "id": "f9",
+      "eventId": "e2",
+      "guestId": "g14",
+      "overall": 5,
+      "food": 5,
+      "venue": 5,
+      "organization": 4,
+      "comments": "Loved the open-air demo area and evening lighting."
+    },
+    {
+      "id": "f10",
+      "eventId": "e2",
+      "guestId": "g16",
+      "overall": 3,
+      "food": 3,
+      "venue": 3,
+      "organization": 3,
+      "comments": "Wind picked up during the reception; shade areas were limited."
+    },
+    {
+      "id": "f11",
+      "eventId": "e5",
+      "guestId": "g24",
+      "overall": 4,
+      "food": 3,
+      "venue": 4,
+      "organization": 4,
+      "comments": "Gallery layout gave exhibitors good visibility."
+    },
+    {
+      "id": "f12",
+      "eventId": "e5",
+      "guestId": "g25",
+      "overall": 4,
+      "food": 4,
+      "venue": 5,
+      "organization": 4,
+      "comments": "Creative outdoor space suited the design showcase."
+    },
+    {
+      "id": "f13",
+      "eventId": "e3",
+      "guestId": "g18",
+      "overall": 5,
+      "food": 4,
+      "venue": 5,
+      "organization": 5,
+      "comments": "Rooftop views made the keynote memorable."
+    },
+    {
+      "id": "f14",
+      "eventId": "e3",
+      "guestId": "g19",
+      "overall": 4,
+      "food": 4,
+      "venue": 4,
+      "organization": 4,
+      "comments": "Workshop pods were easy to find and well spaced."
+    },
+    {
+      "id": "f15",
+      "eventId": "e7",
+      "guestId": "g28",
+      "overall": 5,
+      "food": 5,
+      "venue": 5,
+      "organization": 4,
+      "comments": "Skyline deck was perfect for the food festival atmosphere."
+    },
+    {
+      "id": "f16",
+      "eventId": "e7",
+      "guestId": "g29",
+      "overall": 4,
+      "food": 4,
+      "venue": 4,
+      "organization": 4,
+      "comments": "Great venue for stalls, though VIP lounge filled quickly."
+    },
+    {
+      "id": "f17",
+      "eventId": "e7",
+      "guestId": "g30",
+      "overall": 3,
+      "food": 4,
+      "venue": 3,
+      "organization": 3,
+      "comments": "Crowd flow near the bar service area was congested at peak time."
+    },
+    {
+      "id": "f18",
+      "eventId": "e1",
+      "guestId": "g5",
+      "overall": 5,
+      "food": 5,
+      "venue": 5,
+      "organization": 5,
+      "comments": "Best startup event I have attended in Cairo this year."
+    },
+    {
+      "id": "f19",
+      "eventId": "e1",
+      "guestId": "g6",
+      "overall": 4,
+      "food": 5,
+      "venue": 4,
+      "organization": 4,
+      "comments": "Vegan options were clearly labelled and tasty."
+    },
+    {
+      "id": "f20",
+      "eventId": "e1",
+      "guestId": "g10",
+      "overall": 4,
+      "food": 4,
+      "venue": 5,
+      "organization": 4,
+      "comments": "Smooth check-in and helpful ushers throughout the day."
+    },
+    {
+      "id": "f21",
+      "eventId": "e1",
+      "guestId": "g12",
+      "overall": 5,
+      "food": 4,
+      "venue": 5,
+      "organization": 5,
+      "comments": "Networking dinner was well organized with great energy."
+    },
+    {
+      "id": "f22",
+      "eventId": "e1",
+      "guestId": "g8",
+      "overall": 4,
+      "food": 3,
+      "venue": 4,
+      "organization": 4,
+      "comments": "Demo area was busy but staff kept lines moving."
+    },
+    {
+      "id": "f23",
+      "eventId": "e3",
+      "guestId": "g20",
+      "overall": 2,
+      "food": 3,
+      "venue": 3,
+      "organization": 2,
+      "comments": "Workshop schedule ran late and rooms felt overcrowded."
+    },
+    {
+      "id": "f24",
+      "eventId": "e4",
+      "guestId": "g23",
+      "overall": 5,
+      "food": 5,
+      "venue": 5,
+      "organization": 4,
+      "comments": "Auction dinner service was impeccable."
+    }
+  ]
+}

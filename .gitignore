@@ -1,0 +1,7 @@
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+backend/data/db.json
+.env
+.env.local
+extract_pdf.ps1
