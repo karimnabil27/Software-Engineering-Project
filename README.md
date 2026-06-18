@@ -5,8 +5,11 @@ A full-stack event management platform for organizers, staff, vendors, guests, a
 ## Team Members
 
 -Jonathan Mesdary 22001210
+
 -Philopateer Hany 22001315
+
 -Youssef Azer 22001286
+
 -Karim Nabil 19002105
 ## Technologies Used
 
